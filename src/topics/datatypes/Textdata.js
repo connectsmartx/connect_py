@@ -4,17 +4,71 @@ import './datatype.css';
 const Textdata=()=>{
     return(
         <div>
-            <p>
-            The textual data type in Python is represented by the str class and is used to handle textual data, such as strings of characters. Strings are sequences of characters enclosed in either single quotes (' ') or double quotes (" "). Python treats single-quoted and double-quoted strings interchangeably, so you can use either depending on your preference.
-            <h2>Characteristics of Textual Data Type (str):</h2>
-            <ul>
-                <li><strong>Immutability:</strong> Strings in Python are immutable, meaning once they are created, their individual characters cannot be changed. However, you can create new strings based on existing ones.</li>
-                <li><strong>Concatenation:</strong> You can concatenate (combine) two or more strings using the + operator. This creates a new string that contains the characters of both original strings.</li>
-                <li><strong>Indexing and Slicing:</strong> Strings are sequences, and you can access individual characters using indexing, where the index starts from 0. You can also extract substrings (slices) from a string using slicing.</li>
-                <li><strong>Built-in String Methods:</strong> Python provides a variety of built-in string methods to manipulate strings, such as split(), upper(), lower(), strip(), replace(), and more.</li>
-            </ul>
+            <p className='content'>
+            
+            <h1>Sets and Dictionaries in Python</h1>
 
-            </p>
+    <h2>1. Set Data Type (<code>set</code>)</h2>
+    <p>A <strong>set</strong> is an unordered collection of unique elements. It is defined by enclosing elements within curly braces <code>{}</code> or by using the <code>set()</code> constructor. Sets are used when you want to store a collection of items without duplicates.</p>
+
+    <h3>Example of Sets:</h3>
+    <div className='editor'>
+    <pre>
+        <code>
+            fruits = &#123;"apple", "banana", "cherry"&#125;
+        </code>
+    </pre></div>
+
+    <h3>Common Set Operations:</h3>
+    <ul>
+        <li>Adding elements using the <code>add()</code> method.</li>
+        <li>Removing elements using the <code>remove()</code> or <code>discard()</code> method.</li>
+        <li>Checking membership using the <code>in</code> operator.</li>
+        <li>Performing set operations like union, intersection, and difference.</li>
+    </ul>
+
+    <h3>Example Operations on Sets:</h3>
+    <div className='editor'>
+    <pre>
+        <code>
+            fruits.add("orange")<br></br>
+            fruits.remove("cherry")<br></br>
+            if "banana" in fruits:<br></br>
+            &nbsp;    print("Banana is in the set.")<br></br>
+        </code>
+    </pre></div>
+
+    <h2>2. Dictionary Data Type (<code>dict</code>)</h2>
+    <p>A <strong>dictionary</strong>, also known as a map or associative array, is a collection of key-value pairs. Each key in a dictionary is unique, and it is used to retrieve the associated value. Dictionaries are created using curly braces <code>{}</code> or the <code>dict()</code> constructor.</p>
+
+    <h3>Example of Dictionaries:</h3>
+    <div className='editor'>
+    <pre>
+        <code>
+            person = &#123; "name": "Alice", "age": 30, "city": "New York" &#125;
+        </code>
+    </pre></div>
+
+    <h3>Common Dictionary Operations:</h3>
+    <ul>
+        <li>Accessing values using keys.</li>
+        <li>Adding new key-value pairs.</li>
+        <li>Modifying values.</li>
+        <li>Removing key-value pairs using <code>del</code> or the <code>pop()</code> method.</li>
+    </ul>
+
+    <h3>Example Operations on Dictionaries:</h3>
+    <div className='editor'>
+    <pre>
+        <code>
+            name = person["name"]
+            person["age"] = 31
+            del person["city"]
+        </code>
+    </pre></div>
+
+    <p><strong>Note:</strong> Sets and dictionaries are important data types in Python for various tasks. Sets are used when you need to work with unique collections of items, while dictionaries are used to represent structured data with key-value associations. Understanding when and how to use these data types is crucial in Python programming.</p>
+</p>
         </div>
     )
 }

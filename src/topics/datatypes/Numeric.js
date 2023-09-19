@@ -3,9 +3,10 @@ import './datatype.css';
 const Numeric=()=>{
     return(
         <div>
-            <p>
+            <p className='content'>
+                <h1>Numeric Datatype</h1>
                 <ol id='numnotrequire'>
-                    <li><h2>int:</h2>
+                    <li><h2>Int:</h2>
                     <ul>
                         <li>The int data type represents integers (whole numbers) without any fractional part.</li>
                         <li>Example program:</li><br></br>
@@ -41,7 +42,7 @@ const Numeric=()=>{
                     </ul>
 
                     </li>
-                    <li><h2>float:</h2>
+                    <li><h2>Float:</h2>
                         <ul>
                         <li>The float data type represents floating-point numbers with decimal places.</li>
                         <li>Example program:</li><br></br>
@@ -69,7 +70,7 @@ const Numeric=()=>{
                         </div>
                         </ul>
                     </li>
-                    <li><h2>complex:</h2>
+                    <li><h2>Complex:</h2>
                         <ul>
                         <li>The complex data type represents complex numbers in the form a + bj, where a and b are real numbers and j represents the imaginary unit.</li>
                         <li>Example program:</li><br></br>

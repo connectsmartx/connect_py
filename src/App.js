@@ -83,7 +83,7 @@ const ExpandableList = ({ handleIntroductionClick }) => {
               <button onClick={()=>handleIntroductionClick('numeric')} className='menu2'>Numeric Datatypes</button>
             </li>
             <li>
-            <button onClick={()=>handleIntroductionClick('textual_datatype')} className='menu2'>Textual Datatype</button>
+            <button onClick={()=>handleIntroductionClick('textual_datatype')} className='menu2'>Set and Map Datatype</button>
             </li>
             <li>
             <button onClick={()=>handleIntroductionClick('bool_type')} className='menu2'>Boolean Datatype</button>
